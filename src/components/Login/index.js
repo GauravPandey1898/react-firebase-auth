@@ -75,7 +75,7 @@ function SignIn(props) {
                         type="submit"
                         fullWidth
                         variant="contained"
-                        color="primary"
+                        color="secondary"
                         component={Link}
                         to="/register"
                         className={classes.submit}>
@@ -88,7 +88,7 @@ function SignIn(props) {
     )
     async function login(){
         try{
-            await firebase.login(email, password)
+            await Firebase.login(email, password)
             props.history.replace('/dashboard')
         }
         catch(error){
