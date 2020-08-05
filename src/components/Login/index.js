@@ -60,7 +60,7 @@ function SignIn(props) {
                     </FormControl>
                     <FormControl margin='normal' required fullWidth>
                         <InputLabel htmlFor="password">Password</InputLabel>
-                        <Input id="password" name="password" autoComplete="off" autoFocus value={password} onChange = {e => setPassword(e.target.value)} />
+                        <Input id="password" type='password' name="password" autoComplete="off" autoFocus value={password} onChange = {e => setPassword(e.target.value)} />
                     </FormControl>
                     <Button 
                         type="submit"
